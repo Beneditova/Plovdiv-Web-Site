@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Пловдив</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+	<script src="animation.js"></script>
+	<script src="function.js"></script>
+	<script src="fetch.js"></script>
+	<script src="slideimg.js"></script>
+	
+</head>
+<body>
+	<header class="nav-wrapper">
+		<div class="logo">
+			<ul>
+				<li>
+					<h1>Древен и вечен</h1>
+					<div class="sub-menu">
+						<ul>
+							<li>
+								<a href="file:///C:/Users/PC/Desktop/Plovdiv%20Web/tourism/index.html" id="collections-link">Още за Пловдив!</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+		  <nav>
+			 <a href="file:///C:/Users/PC/Desktop/Plovdiv%20Web/main%20page/index.html" class="active" id="new-link">
+				<div class="letter">Н</div>
+				<div class="letter">а</div>
+				<div class="letter">ч</div>
+				<div class="letter">а</div>
+				<div class="letter">л</div>
+				<div class="letter">о</div>
+			</a>
+			<a href="file:///C:/Users/PC/Desktop/Plovdiv%20Web/tourism/index.html" id="collections-link">
+				<div class="letter">Т</div>
+				<div class="letter">у</div>
+				<div class="letter">р</div>
+				<div class="letter">и</div>
+				<div class="letter">з</div>
+				<div class="letter">ъ</div>
+				<div class="letter">м</div>
+			</a>
+			<a href="file:///C:/Users/PC/Desktop/Plovdiv%20Web/news/index.html" id="trending-link">
+				<div class="letter">Н</div>
+				<div class="letter">о</div>
+				<div class="letter">в</div>
+				<div class="letter">и</div>
+				<div class="letter">н</div>
+				<div class="letter">и</div>
+			</a>
+			<a href="file:///C:/Users/PC/Desktop/Plovdiv%20Web/contact%20us/index.html" id="popular-link">
+				<div class="letter">Р</div>
+				<div class="letter">е</div>
+				<div class="letter">г</div>
+				<div class="letter">и</div>
+				<div class="letter">с</div>
+				<div class="letter">ъ</div>
+				<div class="letter">р</div>
+			</a>
+		</nav>
+	</header>
+
+	<main class="column-wrapper">
+		<section class="text-section new-content">
+			<h1>Пловдив</h1>
+			<p id="first-info">
+				Град на над 8000 години,в него се провеждат множество културни прояви: международният панаир, международният театрален фестивал Сцена на кръстопът“, „Капана фест“, „Нощта на Пловдив“, музикалният форум „Sounds of The Ages“, международният фолклорен фестивал „Пловдив“ и др.<span id="dots">...</span><span id="more">Пловдив е избран за европейска столица на културата за 2019.</span>
+			</p>
+			<button onclick="myFunction()" id="myBtn">Прочети още</button>
+			<div class="details-btn">
+				 <div>Намери повече информация в "Туризъм"</div>
+				<img src="plus.png" alt="Plus Icon">
+			</div>
+		</section>
+
+		<section class="image-section">
+            <img class="slide" src="https://debati.bg/wp-content/uploads/2017/11/plovdiv-3.jpg">
+		    <img class="slide" src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/49808106_1436638906477570_8266484036617109504_o.jpg?_nc_cat=105&_nc_ht=scontent-sof1-1.xx&oh=f91833b78a10fe1e7e6c2b9de9e25393&oe=5D9BB615">
+		    <img class="slide" src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/59901646_1519025678238892_1441188280606392320_n.jpg?_nc_cat=111&_nc_ht=scontent-sof1-1.xx&oh=ea5e3d3c99a756941dbe86ec0ece2902&oe=5D9A35DC">
+		    <img class="slide" src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/40085654_1330106630464132_9118757418187096064_o.jpg?_nc_cat=104&_nc_ht=scontent-sof1-1.xx&oh=b486a18451e89e420234fd839c32e4d9&oe=5D9E9D51">
+		    <img class="slide" src="https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/26952703_1115175441957253_932466056513220691_o.jpg?_nc_cat=104&_nc_ht=scontent-sof1-1.xx&oh=e529bd324bb47374edffd6f9ce2793de&oe=5D5E8A3A">
+            <img class="slide" src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/45480423_1385832231558238_1813106738765758464_n.jpg?_nc_cat=107&_nc_ht=scontent-sof1-1.xx&oh=01d944a8f470d17399090ef8a86771cf&oe=5D9638B7">
+            <img class="slide" src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/57882414_1506601372814656_1756791325149102080_o.jpg?_nc_cat=108&_nc_ht=scontent-sof1-1.xx&oh=796970dd4d321a607f09b1e1bd300469&oe=5D9CAE6B">
+        </section>
+        <section class="sidebar-section">
+			<div class="hamburger">
+				<div class="ham-line"></div>
+				<div class="ham-line" id="short"></div>
+				<div class="ham-line"></div>
+			</div>
+
+			<div class="social">
+				<a href="http://facebook.com">
+					<div>my facebook</div>
+				</a>
+			 </div>
+		</section>
+	</main>
+<footer>
+	<div class="gallery-nav">
+		<div onclick="plusSlides(-1)" id="yellow-bg">
+			<img src="arrow.png" alt="Arrow Icon">
+		</div>
+		<div onclick="plusSlides(1)" id="white-bg">
+			<img src="arrow.png" alt="Arrow Icon">
+		</div>
+	</div>
+ </footer>
+<script type="text/javascript">
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Прочети още";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Прочети по-малко";
+    moreText.style.display = "inline";
+  }
+} 
+</script>
+</body>
+</html>

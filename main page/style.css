@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura";
+  font-weight: normal; }
+
+.flex-center, .logo, .gallery-nav div, .gallery-counter div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-wrapper {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 2; }
+
+.logo {
+  font-size: 0.5em;
+  background: #05668d;
+  color: #FFF;
+  width: 21%;
+  height: 100%; 
+  text-decoration: none;
+
+}
+
+ nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #FFF; 
+}
+  nav a {
+
+    color: #B1B1B1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    transition: color 1s ease; }
+    nav a:hover {
+      color: #1D1D1D; 
+}
+
+.sub-menu{
+  display: none;
+}
+.logo:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin: 20px;
+    background-color: #FFF; 
+    padding: 2.5em;
+    padding-bottom: -0.9em;
+    text-align: center;
+    font-size: 2em;
+    height: 10%;
+  }
+
+  .nav-wrapper div ul li a {
+    text-decoration: none;
+    color: gray;
+  }
+
+  #more {
+    display: none;
+  }
+.active {
+  color: #1D1D1D; }
+
+.gallery-nav {
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-self: center; }
+  .gallery-nav div {
+    flex: 1;
+    background-color: #FFC001;
+    cursor: pointer; }
+    .gallery-nav div:hover {
+      box-shadow: 0px 0px 5em rgba(0, 0, 0, 0.1); }
+    .gallery-nav div img {
+      height: 70%;
+ }
+
+#white-bg {
+  background-color: #FFF;
+  transition: box-shadow 1s ease; 
+}
+#white-bg img {
+    transform: rotate(180deg);
+ }
+
+.column-wrapper {
+  display: flex;
+  height: 100vh; }
+ .column-wrapper section {
+  display: flex; 
+}
+
+.text-section {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5%;
+  padding-right: 2%;  
+  background-color: #E8DCF4;
+  color: #05668d;
+}
+  .text-section h1 {
+    font-size: 4.5em;
+    width: 20%;
+    margin-bottom: 0.7em; 
+    position: relative;}
+  .text-section p {
+    max-width: 100%;
+    line-height: 120%;
+    margin-bottom: 25%;
+    letter-spacing: 20%;
+    padding-right: 20% }
+
+.details-btn {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  cursor: pointer; }
+  .details-btn:hover img {
+    transform: rotate(405deg); }
+  .details-btn img {
+    transition: all .6s ease;
+    height: 11px;
+    margin-left: 10px; }
+
+.image-section {
+  flex: 1.5;
+  position: relative;
+  overflow: hidden;}
+  .image-section .slide{
+     width: 100%;
+     background-size: cover;
+     object-fit: cover;
+  }
+
+.sidebar-section {
+  width: 4%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF; }
+
+.hamburger {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer; }
+  .hamburger div {
+    height: 0.1em;
+    width: 30%;
+    background-color: #1D1D1D;
+    margin-bottom: 0.5em; }
+
+#short {
+  width: 25%;
+  transition: width .7s ease; }
+
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+  width: 95%;
+  align-items: center;
+  margin-top: 15em; }
+  .social a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #B1B1B1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    transition: color 1s ease; }
+    .social a:first-child:hover {
+    color: #4267B2; }
+    .social a:last-child:hover {
+    color: #08A0E9; }
+
+@media screen and (max-width: 560px){
+  .column-wrapper, .gallery-nav, .image-section, .logo, nav a {
+    width: auto;
+    float: none;
+    margin-right: 0;
+  }
+  
+}
+@media(max-width: 760px){
+  .image-section{
+    padding: 0;
+    width: auto;
+    float: none;
+    margin-right: 0;
+  }
+  
+}
+
