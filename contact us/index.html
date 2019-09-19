@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-	<script src="function.js"></script>
-	
+	<script src="../function.js"></script>
+
 	<script type="text/javascript">
 		function validateForm(){
 			var username = document.getElementById("uname");
@@ -15,7 +15,7 @@
 			var email = document.getElementById("email");
 			var password = document.getElementById("password")
 			var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
-			
+
 			 re = /^\w+$/;
                 if(!re.test(form.username.value)) {
               alert("Username must contain only letters, numbers and underscores!");
@@ -41,7 +41,7 @@
             return false;
             }
 			if (username.value.trim()=="" || famname.value.trim()=="") {
-				alert("2те имена са празни!.");  
+				alert("2те имена са празни!.");
 				form.famname.focus();
 				return false;
 			}
@@ -49,21 +49,21 @@
 				true;
 			}
 			if (password.value.trim()=="") {
-				alert("Password is empty.");  
+				alert("Password is empty.");
 				return false;
 			}
 			else{
 				true;
 			}
-			 if(message.length<30){  
+			 if(message.length<30){
                  var username = document.getElementById("numloc").innerHTML=" е твърде дълго";
-                 return false;  
-                }  
-             if(name.length<4){  
+                 return false;
+                }
+             if(name.length<4){
                  var username = document.getElementById("nameSize").innerHTML=" е твърде късо";
-                 return false;  
-                }  
-                
+                 return false;
+                }
+
                 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)) {
 
                 }
@@ -124,13 +124,13 @@
       </a>
     </nav>
   </header>
-		
-		
+
+
 		<main>
 			<section>
 				<div class="head">
-				
-					
+
+
 				</div>
 				<div class="form">
 					<form onsubmit="return validateForm(this)">
@@ -157,6 +157,6 @@
 			</section>
 
 		</main>
-	
+
 </body>
 </html>
